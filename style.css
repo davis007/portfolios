@@ -1,0 +1,185 @@
+/* フリーランスポートフォリオ カスタムCSS */
+
+/* 基本スタイル */
+:root {
+    --primary-color: #3b82f6;
+    --secondary-color: #8b5cf6;
+    --accent-color: #10b981;
+    --success-color: #22c55e;
+}
+
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+    color: #1f2937; /* より濃い文字色でコントラスト向上 */
+}
+
+/* 背景色の調整 */
+.bg-base-100 {
+    background-color: #f9fafb; /* より明るい背景色 */
+}
+
+.bg-base-200 {
+    background-color: #f3f4f6; /* より明るい背景色 */
+}
+
+/* カードの背景色調整 */
+.card {
+    background-color: white;
+}
+
+/* ナビゲーションリンク */
+.nav-link {
+    @apply px-3 py-2 rounded-lg transition-all duration-300 font-medium;
+    color: #4b5563;
+}
+
+.nav-link:hover {
+    @apply bg-primary/10 text-primary;
+}
+
+.nav-link.active {
+    @apply bg-primary text-white;
+}
+
+/* DaisyUI Timelineのカスタマイズ */
+.timeline-vertical {
+    --timeline-colors: var(--primary-color), var(--secondary-color), var(--accent-color), var(--success-color), #3abff8;
+}
+
+.timeline-box {
+    @apply shadow-md;
+}
+
+/* タイムラインの線の色をカラフルに */
+.timeline-vertical hr {
+    @apply h-1;
+}
+
+.timeline-vertical hr.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.timeline-vertical hr.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.timeline-vertical hr.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.timeline-vertical hr.bg-success {
+    background-color: var(--success-color);
+}
+
+.timeline-vertical hr.bg-info {
+    background-color: #3abff8;
+}
+
+/* セクション間隔 */
+section {
+    @apply scroll-mt-20;
+}
+
+/* カードホバー効果 */
+.card {
+    @apply transition-transform duration-300;
+}
+
+.card:hover {
+    @apply transform -translate-y-2;
+}
+
+/* プログレスバーカスタマイズ */
+progress::-webkit-progress-bar {
+    @apply bg-gray-200 rounded-full;
+}
+
+progress::-webkit-progress-value {
+    @apply bg-primary rounded-full;
+}
+
+progress::-moz-progress-bar {
+    @apply bg-primary rounded-full;
+}
+
+/* ボタンカスタマイズ */
+.btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary border-0;
+}
+
+.btn-primary:hover {
+    @apply bg-gradient-to-r from-primary/90 to-secondary/90;
+}
+
+.btn-outline.btn-primary {
+    @apply text-primary border-primary bg-transparent;
+}
+
+.btn-outline.btn-primary:hover {
+    @apply bg-primary text-white;
+}
+
+/* フォームスタイル */
+.input:focus, .textarea:focus {
+    @apply border-primary ring-2 ring-primary/20;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .timeline-vertical {
+        @apply px-4;
+    }
+
+    .timeline-start, .timeline-end {
+        @apply text-sm;
+    }
+}
+
+/* アニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* スクロールバーカスタマイズ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+}
+
+/* 印刷用スタイル */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+
+    .card {
+        break-inside: avoid;
+    }
+}

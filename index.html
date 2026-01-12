@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- カスタムCSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/portfolio.png">
+</head>
+<body class="font-sans bg-base-100 text-gray-900">
+    <!-- ヘッダー / ナビゲーション -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- ロゴ -->
+                <div class="mb-4 md:mb-0">
+                    <a href="#top" class="text-2xl font-bold text-primary">
+                        <i class="fas fa-code mr-2"></i>Portfolio
+                    </a>
+                </div>
+
+                <!-- ナビゲーションメニュー -->
+                <nav class="w-full md:w-auto">
+                    <ul class="flex flex-wrap justify-center md:justify-end space-x-0 md:space-x-6 space-y-2 md:space-y-0">
+                        <li><a href="#top" class="nav-link"><i class="fas fa-home mr-2"></i>TOP</a></li>
+                        <li><a href="#skills" class="nav-link"><i class="fas fa-code mr-2"></i>Skill</a></li>
+                        <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase mr-2"></i>経歴</a></li>
+                        <li><a href="#works" class="nav-link"><i class="fas fa-laptop-code mr-2"></i>作例</a></li>
+                        <li><a href="#appeal" class="nav-link"><i class="fas fa-bullhorn mr-2"></i>アピール</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- TOPセクション -->
+        <section id="top" class="py-20 md:py-28 bg-gradient-to-br from-primary/10 to-secondary/10">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                            <span class="text-primary">機能は増やさない</span>で<br>
+                            価値を濃くする。
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8">
+                            機能は増やさない。価値を濃くする。<br>
+                            直感的に使えるUIと、必要最小限の機能設計。<br>
+                            迷わず使えるプロダクトを作っています。
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#works" class="btn btn-primary btn-lg text-white">
+                                <i class="fas fa-eye mr-2"></i>作例を見る
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <div class="relative">
+                            <div class="w-64 h-64 md:w-80 md:h-80 bg-primary/20 rounded-full flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-7xl md:text-9xl text-primary"></i>
+                            </div>
+                            <div class="absolute -bottom-4 -right-4 bg-secondary text-white p-4 rounded-lg shadow-lg">
+                                <div class="text-sm font-bold">Web系エンジニア</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skillセクション -->
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">技術スキル</h2>
+                    <p class="max-w-2xl mx-auto font-bold">Web系エンジニア歴18年以上の実務経験があります。</p>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        フロントエンドからバックエンド、インフラまで一貫して対応し、レガシーなシステムにおいても確実性・堅牢性を重視した技術選定を行っています。
+                    </p>
+                </div>
+
+                <!-- 技術スキルテーブル -->
+                <div class="overflow-x-auto bg-white rounded-2xl shadow-lg p-6">
+                    <table class="table w-full">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="text-lg font-bold text-gray-800">カテゴリ</th>
+                                <th class="text-lg font-bold text-gray-800">技術</th>
+                                <th class="text-lg font-bold text-gray-800">経験年数</th>
+                                <th class="text-lg font-bold text-gray-800">コメント</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- フロントエンドスキル -->
+                            <tr>
+                                <td rowspan="4" class="font-bold text-primary align-top bg-gray-50">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-paint-brush mr-2"></i>
+                                        フロントエンド
+                                    </div>
+                                </td>
+                                <td class="font-medium text-gray-800">HTML/CSS</td>
+                                <td><span class="badge badge-primary badge-lg text-white">15年</span></td>
+                                <td class="text-gray-700">レスポンシブデザイン、アクセシビリティ対応、実務レベルのUI構築</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">JavaScript/JQuery</td>
+                                <td><span class="badge badge-primary badge-lg text-white">15年</span></td>
+                                <td class="text-gray-700">ES6+、フレームワーク（React/Vue）経験豊富、型安全な開発を重視</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">Anglar.js</td>
+                                <td><span class="badge badge-primary badge-lg text-white">3ヶ月</span></td>
+                                <td class="text-gray-700">Angularの初期Ver.画面制御・動的表示の構築を経験</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">Bootstrap/Tailwind CSS</td>
+                                <td><span class="badge badge-primary badge-lg text-white">10年</span></td>
+                                <td class="text-gray-700">クライアントからの指定がない限り、多くのプロジェクトで使用してきました。</td>
+                            </tr>
+                            <!-- アプリケーション/CMS -->
+                            <tr>
+                                <td rowspan="2" class="font-bold text-secondary align-top bg-gray-50">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-server mr-2"></i>
+                                        アプリケーション/CMS
+                                    </div>
+                                </td>
+                                <td class="font-medium text-gray-800">EC-CUBE</td>
+                                <td><span class="badge badge-accent badge-lg text-white">2年</span></td>
+                                <td class="text-gray-700">顧客対応から要件整理、外注指示・発注管理まで対応</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">WordPress</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">5年</span></td>
+                                <td class="text-gray-700">テーマ作成からプラグイン制作まで開発実装経験あり</td>
+                            </tr>
+                            <!-- 決済・外部サービス連携 -->
+                            <tr>
+                                <td rowspan="2" class="font-bold text-secondary align-top bg-gray-50">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-server mr-2"></i>
+                                        決済・外部サービス連携
+                                    </div>
+                                </td>
+                                <td class="font-medium text-gray-800">Stripe</td>
+                                <td><span class="badge badge-accent badge-lg text-white">4年</span></td>
+                                <td class="text-gray-700">決済フロー実装、Webhook連携、セキュリティ考慮 単発決済およびサブスク課金まで実装経験あり</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">GMO FinCode</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">1年</span></td>
+                                <td class="text-gray-700">決済フロー実装、Webhook連携、Laravelと連携してスムーズな決済を実装した経験あり</td>
+                            </tr>
+
+                            <!-- バックエンドスキル -->
+                            <tr>
+                                <td rowspan="5" class="font-bold text-secondary align-top bg-gray-50">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-server mr-2"></i>
+                                        バックエンド
+                                    </div>
+                                </td>
+                                <td class="font-medium text-gray-800">PHP</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">20年</span></td>
+                                <td class="text-gray-700">大規模システム開発経験豊富、LaravelでのAPI開発・保守実績多数</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">Laravel</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">7年</span></td>
+                                <td class="text-gray-700">Laravel 5系から実務導入し、主要案件の標準フレームワークとして使用</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">Node.js</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">10年</span></td>
+                                <td class="text-gray-700">Node.jsを用いた自動化・検証処理を担当し、Playwrightによるブラウザ操作の実装経験あり</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">Python/Django</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">3年</span></td>
+                                <td class="text-gray-700">データ分析、機械学習連携、高速なプロトタイピングが可能</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">データベース設計</td>
+                                <td><span class="badge badge-secondary badge-lg text-white">20年</span></td>
+                                <td class="text-gray-700">MySQL/MariaDBにおけるDB設計、正規化、クエリ最適化・チューニングを実務で経験</td>
+                            </tr>
+
+                            <!-- その他スキル -->
+                            <tr>
+                                <td rowspan="5" class="font-bold text-accent align-top bg-gray-50">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-tools mr-2"></i>
+                                        その他
+                                    </div>
+                                </td>
+                                <td class="font-medium text-gray-800">Github</td>
+                                <td><span class="badge badge-accent badge-lg text-white">5年</span></td>
+                                <td class="text-gray-700">GitHubを用いたバージョン管理およびソースコードの保全・管理を実施</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">VPSインフラ</td>
+                                <td><span class="badge badge-accent badge-lg text-white">2年</span></td>
+                                <td class="text-gray-700">ConoHa WING/GMO VPS環境でのサーバー構築・運用（Linux、Webサーバー設定LAMP環境）</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">UI/UX設計</td>
+                                <td><span class="badge badge-accent badge-lg text-white">10年</span></td>
+                                <td class="text-gray-700">不要な要素を省いたシンプルな画面設計</td>
+                            </tr>
+                            <tr>
+                                <td class="font-medium text-gray-800">プロジェクト管理</td>
+                                <td><span class="badge badge-accent badge-lg text-white">12年</span></td>
+                                <td class="text-gray-700">アジャイル開発（Scrum）、要件定義からリリースまでの一貫管理</td>
+                            </tr>
+
+                            <tr>
+                                <td class="font-medium text-gray-800">上流工程/ディレクション</td>
+                                <td><span class="badge badge-accent badge-lg text-white">12年</span></td>
+                                <td class="text-gray-700">顧客対応から要件整理、外注指示・発注管理まで対応</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="mt-8 p-4 bg-primary/10 rounded-lg">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-primary text-xl mt-1 mr-3"></i>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">スキル評価について</h4>
+                                <p class="text-gray-600">
+                                    経験年数は実務での使用年数を基準としています。各技術について、最新のトレンドやベストプラクティスを継続的に学習し、
+                                    プロジェクトに適した技術選定と実装が可能です。特にPHPについては20年の実務経験があり、
+                                    中規模システムからスタートアップまで幅広いプロジェクトに対応できます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 経歴セクション -->
+        <section id="experience" class="py-20 bg-base-200">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">経歴</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        これまでのキャリアと実績。企業での勤務経験とフリーランスとしての活動実績があります。
+                    </p>
+                </div>
+
+                <!-- DaisyUI Vertical Timeline with Colorful Lines -->
+                <ul class="timeline timeline-vertical timeline-snap-icon max-w-4xl mx-auto">
+                    <!-- タイムラインアイテム1: 個人事業 (1999-2000) -->
+                    <li class="timeline-item">
+                        <div class="timeline-start text-primary font-bold text-lg">1999年4月<br>〜 2000年12月</div>
+                        <div class="timeline-middle">
+                            <div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+                                <i class="fas fa-briefcase text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-end timeline-box bg-primary/10 border-primary/30">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body p-4">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="card-title text-xl text-primary">【個人事業】</h3>
+                                        <span class="badge badge-primary">1年9ヶ月</span>
+                                    </div>
+                                    <div class="mb-4 space-y-3">
+                                        <p><strong>雇用形態:</strong> 個人事業 フリーランス</p>
+                                        <p><strong>担当業務:</strong></p>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>クライアント向けWebサイトの受託制作</li>
+                                            <li>PHPを用いたショッピングカート機能の実装・カスタマイズ(フルスクラッチ)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="badge badge-outline">PHP</span>
+                                        <span class="badge badge-outline">ショッピングカート</span>
+                                        <span class="badge badge-outline">Web制作</span>
+                                        <span class="badge badge-outline">フリーランス</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="bg-primary"/>
+                    </li>
+
+                    <!-- タイムラインアイテム2: 釧路印刷 -->
+                    <li class="timeline-item">
+                        <div class="timeline-start text-secondary font-bold text-lg">2001年2月<br>〜 2005年6月</div>
+                        <div class="timeline-middle">
+                            <div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center">
+                                <i class="fas fa-print text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-end timeline-box bg-secondary/10 border-secondary/30">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body p-4">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="card-title text-xl text-secondary">【釧路印刷】</h3>
+                                        <span class="badge badge-secondary">4年5ヶ月</span>
+                                    </div>
+                                    <div class="mb-4 space-y-3">
+                                        <p><strong>雇用形態:</strong> 正社員</p>
+                                        <p><strong>担当業務:</strong></p>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>イラストレーター10を使った版下デザイン作業</li>
+                                            <li>主に伝票や帳票のデザイン作成</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="badge badge-outline">Illustrator</span>
+                                        <span class="badge badge-outline">デザイン</span>
+                                        <span class="badge badge-outline">版下作成</span>
+                                        <span class="badge badge-outline">印刷業</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="bg-secondary"/>
+                    </li>
+
+                    <!-- タイムラインアイテム3: 株式会社TRICK -->
+                    <li class="timeline-item">
+                        <div class="timeline-start text-accent font-bold text-lg">2006年03月<br>〜 2009年12月</div>
+                        <div class="timeline-middle">
+                            <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center">
+                                <i class="fas fa-users text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-end timeline-box bg-accent/10 border-accent/30">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body p-4">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="card-title text-xl text-accent">【株式会社TRICK】</h3>
+                                        <span class="badge badge-accent">3年10ヶ月</span>
+                                    </div>
+                                    <div class="mb-4 space-y-3">
+                                        <p><strong>雇用形態:</strong> 正社員</p>
+                                        <p><strong>担当業務:</strong></p>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>総勢8人程度の規模の会社でチームリーダーを担当</li>
+                                            <li>グループ店舗を巡回するルート営業として、各店舗責任者と折衝</li>
+                                            <li>イベント企画の提案およびWebサイト更新内容の企画・決定など上流工程を担当</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="badge badge-outline">チームリーダー</span>
+                                        <span class="badge badge-outline">営業</span>
+                                        <span class="badge badge-outline">上流工程</span>
+                                        <span class="badge badge-outline">企画</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="bg-accent"/>
+                    </li>
+
+                    <!-- タイムラインアイテム4: 個人事業 (2010-2015) -->
+                    <li class="timeline-item">
+                        <div class="timeline-start text-success font-bold text-lg">2010年01月<br>〜 2025年9月</div>
+                        <div class="timeline-middle">
+                            <div class="w-6 h-6 rounded-full bg-success flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-white text-xs"></i>
+                            </div>
+                        </div>
+                        <div class="timeline-end timeline-box bg-success/10 border-success/30">
+                            <div class="card bg-transparent border-0">
+                                <div class="card-body p-4">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="card-title text-xl text-success">【個人事業】</h3>
+                                        <span class="badge badge-success">5年3ヶ月</span>
+                                    </div>
+                                    <div class="mb-4 space-y-3">
+                                        <p><strong>雇用形態:</strong> フリーランス</p>
+                                        <p><strong>担当業務:</strong></p>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>クライアント向けWebサイトの受託制作</li>
+                                            <li>自社運営Webサイトの企画・構築・運用</li>
+                                            <li>独自プラットフォームの開発・販売</li>
+                                            <li>PHP/JavaScriptを用いたWebツール開発</li>
+                                            <li>外部API連携によるデータ取得・自動処理の実装(旧TwitterAPI)</li>
+                                            <li>小規模プロダクトの要件定義から運用まで一貫して対応</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="badge badge-outline">PHP</span>
+                                        <span class="badge badge-outline">JavaScript</span>
+                                        <span class="badge badge-outline">API連携</span>
+                                        <span class="badge badge-outline">Web開発</span>
+                                        <span class="badge badge-outline">要件定義</span>
+                                        <span class="badge badge-outline">プロダクト開発</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 最後のアイテムなのでhrは不要 -->
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 作例セクション -->
+        <section id="works" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">作例</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        これまでに開発したプロジェクトの一部を掲載しています。<br>
+                        守秘義務の関係上、全ては公開できませんが、各作例では技術スタックと担当範囲を明確に記載しています。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- プロジェクト1 -->
+                    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <figure class="px-6 pt-6">
+                            <img src="img/thumb/kabu_thumb.jpg" alt="ECサイト構築" width="430" height="195" class="w-full h-48 object-cover rounded-lg">
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-xl">株プラットフォーム構築</h3>
+                            <p class="text-gray-600 mb-4">
+                                みんなの株予想 収支報告をSNSで報告出来るプラットフォームを構築
+                                PHP(Laravel11)+Pythonを連携して現状の株価を取得して表示、株式チャートを表示できるようになっています。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge badge-primary text-white">Laravel11</span>
+                                <span class="badge badge-primary text-white">Python</span>
+                                <span class="badge badge-primary text-white">MySQL</span>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-accent btn-sm text-white">詳細を見る</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- プロジェクト2 -->
+                    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <figure class="px-6 pt-6">
+                            <div class="w-full h-48 bg-gradient-to-r from-green-100 to-teal-100 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-chart-line text-6xl text-green-600"></i>
+                            </div>
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-xl">業務管理システム</h3>
+                            <p class="text-gray-600 mb-4">
+                                製造業向けの生産管理システム。在庫管理、生産計画、品質管理モジュールを開発。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge badge-primary">React</span>
+                                <span class="badge badge-primary">Node.js</span>
+                                <span class="badge badge-primary">PostgreSQL</span>
+                                <span class="badge badge-primary">Docker</span>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-ghost btn-sm">詳細を見る</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- プロジェクト3 -->
+                    <div class="card bg-base-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <figure class="px-6 pt-6">
+                            <div class="w-full h-48 bg-gradient-to-r from-orange-100 to-red-100 rounded-lg flex items-center justify-center">
+                                <i class="fas fa-mobile-alt text-6xl text-orange-600"></i>
+                            </div>
+                        </figure>
+                        <div class="card-body">
+                            <h3 class="card-title text-xl">モバイルアプリ</h3>
+                            <p class="text-gray-600 mb-4">
+                                フィットネスアプリの開発。ユーザー管理、トレーニング計画、進捗トラッキング機能を実装。
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge badge-primary">React Native</span>
+                                <span class="badge badge-primary">Firebase</span>
+                                <span class="badge badge-primary">Redux</span>
+                                <span class="badge badge-primary">GraphQL</span>
+                            </div>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-ghost btn-sm">詳細を見る</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アピールセクション -->
+        <section id="appeal" class="py-20 bg-base-200">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">アピールポイント</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        企業様に選んでいただける理由。フリーランスとしての強みと価値観をご紹介します。
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- アピール1 -->
+                    <div class="card bg-base-100 shadow-lg text-center">
+                        <div class="card-body">
+                            <div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-rocket text-3xl text-primary"></i>
+                            </div>
+                            <h3 class="card-title text-lg mb-2">迅速な対応</h3>
+                            <p class="text-gray-600">
+                                お問い合わせから24時間以内の返信を心がけています。緊急の対応も可能です。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- アピール2 -->
+                    <div class="card bg-base-100 shadow-lg text-center">
+                        <div class="card-body">
+                            <div class="w-16 h-16 bg-secondary/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-3xl text-secondary"></i>
+                            </div>
+                            <h3 class="card-title text-lg mb-2">柔軟な対応</h3>
+                            <p class="text-gray-600">
+                                クライアント様の要望に合わせた柔軟な開発が可能です。固定観念に縛られません。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- アピール3 -->
+                    <div class="card bg-base-100 shadow-lg text-center">
+                        <div class="card-body">
+                            <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-3xl text-accent"></i>
+                            </div>
+                            <h3 class="card-title text-lg mb-2">コスト効率</h3>
+                            <p class="text-gray-600">
+                                固定費がかからないため、プロジェクトに応じた最適なコストでご提案できます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- アピール4 -->
+                    <div class="card bg-base-100 shadow-lg text-center">
+                        <div class="card-body">
+                            <div class="w-16 h-16 bg-success/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-headset text-3xl text-success"></i>
+                            </div>
+                            <h3 class="card-title text-lg mb-2">継続サポート</h3>
+                            <p class="text-gray-600">
+                                開発後の保守・運用も対応可能です。長期的なパートナーとしてサポートします。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="bg-base-300 text-base-content py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- 左側: ロゴと説明 -->
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <a href="#top" class="text-xl font-bold text-primary inline-flex items-center">
+                        <i class="fas fa-code mr-2"></i>Portfolio
+                    </a>
+                    <p class="mt-2 text-sm text-gray-600">企業向けアピールサイト</p>
+                </div>
+
+                <!-- 右側: ナビゲーションリンク -->
+                <div class="text-center md:text-right">
+                    <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6">
+                        <li><a href="#top" class="text-gray-600 hover:text-primary transition-colors text-white">TOP</a></li>
+                        <li><a href="#skills" class="text-gray-600 hover:text-primary transition-colors text-white">Skill</a></li>
+                        <li><a href="#experience" class="text-gray-600 hover:text-primary transition-colors text-white">経歴</a></li>
+                        <li><a href="#works" class="text-gray-600 hover:text-primary transition-colors text-white">作例</a></li>
+                        <li><a href="#appeal" class="text-gray-600 hover:text-primary transition-colors text-white">アピール</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 著作権表示 -->
+            <div class="border-t border-base-300 mt-6 pt-6 text-center text-gray-500 text-sm">
+                <p>© 2026 Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- カスタムJavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
