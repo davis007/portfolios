@@ -169,6 +169,92 @@ progress::-moz-progress-bar {
     @apply bg-primary;
 }
 
+/* アピールセクションの新しいカードスタイル */
+.appeal-card-gradient {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.border-l-primary {
+    border-left-color: var(--primary-color);
+}
+
+.bg-primary\/5 {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.bg-secondary\/5 {
+    background-color: rgba(139, 92, 246, 0.05);
+}
+
+.bg-accent\/5 {
+    background-color: rgba(16, 185, 129, 0.05);
+}
+
+/* グラデーションアイコン */
+.gradient-icon {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* カードのホバー効果強化 */
+.card-hover-lift {
+    transition: all 0.3s ease;
+}
+
+.card-hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* セクション間のスペーシング改善 */
+.section-spacing {
+    margin-bottom: 1.5rem;
+}
+
+/* アピールセクションの読みやすさ向上 */
+.appeal-text-content {
+    line-height: 1.8;
+    font-size: 1.125rem; /* 18px */
+}
+
+.appeal-text-content p {
+    margin-bottom: 1.5rem;
+}
+
+.appeal-text-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 引用スタイル */
+.appeal-quote {
+    border-left-width: 4px;
+    border-left-color: var(--primary-color);
+    background-color: rgba(59, 130, 246, 0.05);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 768px) {
+    .appeal-card-content {
+        flex-direction: column;
+    }
+
+    .appeal-card-icon {
+        margin-bottom: 2rem;
+    }
+
+    .appeal-text-content {
+        font-size: 1rem; /* 16px */
+        line-height: 1.7;
+    }
+}
+
 /* 印刷用スタイル */
 @media print {
     .no-print {

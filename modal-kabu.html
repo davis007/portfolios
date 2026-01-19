@@ -1,0 +1,85 @@
+<div class="modal-content h-full flex flex-col">
+    <!-- 大画像セクション（sticky） -->
+    <div class="main-image-section sticky top-0 bg-white z-10 pb-4">
+        <div class="main-image-container">
+            <img id="main-image" src="img/thumb/kabu_thumb2.jpg" alt="株プラットフォーム メイン画像" class="w-full object-contain rounded-lg shadow-lg">
+        </div>
+
+        <!-- サムネイル一覧（存在するファイルのみ） -->
+        <div class="thumbnails-container mt-4">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="thumbnail-btn active" data-image="img/thumb/kabu_thumb2.jpg">
+                    <img src="img/thumb/kabu_thumb2.jpg" alt="サムネイル1" class="w-20 h-20 object-cover rounded-lg border-2 border-primary">
+                </button>
+                <button class="thumbnail-btn" data-image="img/thumb/kabu_thumb3.jpg">
+                    <img src="img/thumb/kabu_thumb3.jpg" alt="サムネイル2" class="w-20 h-20 object-cover rounded-lg border-2 border-transparent hover:border-gray-300">
+                </button>
+                <button class="thumbnail-btn" data-image="img/thumb/kabu_thumb4.jpg">
+                    <img src="img/thumb/kabu_thumb4.jpg" alt="サムネイル3" class="w-20 h-20 object-cover rounded-lg border-2 border-transparent hover:border-gray-300">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 説明文セクション（スクロール可能） -->
+    <div class="description-section mt-6">
+        <h3 class="text-2xl font-bold mb-4">株プラットフォーム構築 - 詳細</h3>
+
+        <div class="space-y-4 text-gray-700">
+            <p>
+                <strong>プロジェクト概要：</strong><br>
+                みんなの株予想収支報告をSNSで共有できるプラットフォームを構築しました。
+                ユーザーが自分の株取引の予想と結果を記録し、コミュニティと共有できるサービスです。
+            </p>
+
+            <p>
+                <strong>主な機能：</strong>
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>株価情報のリアルタイム取得と表示</li>
+                <li>株式チャートのインタラクティブな表示</li>
+                <li>予想収支の記録と管理</li>
+                <li>SNS連携による共有機能</li>
+                <li>ユーザー同士のフォロー・いいね機能</li>
+                <li>ランキングシステム（収益率ベース）</li>
+            </ul>
+
+            <p>
+                <strong>技術スタック：</strong>
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-primary text-white">Laravel 11</span>
+                <span class="badge badge-primary text-white">Python</span>
+                <span class="badge badge-primary text-white">MySQL</span>
+                <span class="badge badge-primary text-white">JavaScript</span>
+                <span class="badge badge-primary text-white">Tailwind CSS</span>
+                <span class="badge badge-primary text-white">Docker</span>
+                <span class="badge badge-primary text-white">AWS</span>
+            </div>
+
+            <p>
+                <strong>開発の特徴：</strong><br>
+                PHP(Laravel11)とPythonを連携させ、Python側で株価データを取得・処理し、
+                Laravel側でユーザー管理やUIを提供するハイブリッドアーキテクチャを採用しました。
+                これにより、データ処理の効率性とWebアプリケーションの開発速度を両立しています。
+            </p>
+
+            <p>
+                <strong>担当範囲：</strong><br>
+                要件定義から設計、開発、テスト、デプロイまで一貫して担当。
+                特にバックエンドAPI設計とフロントエンドのUI/UX設計に注力しました。
+            </p>
+
+            <p>
+                <strong>プロジェクト期間：</strong><br>
+                2024年1月〜2024年6月（6ヶ月）
+            </p>
+
+            <p>
+                <strong>成果：</strong><br>
+                ベータ版リリース後、3ヶ月で100名以上のユーザーを獲得。
+                ユーザーからのフィードバックを元に継続的に改善を実施しています。
+            </p>
+        </div>
+    </div>
+</div>

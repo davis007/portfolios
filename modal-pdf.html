@@ -1,0 +1,79 @@
+<div class="modal-content h-full flex flex-col">
+    <!-- 大画像セクション（sticky） -->
+    <div class="main-image-section sticky top-0 bg-white z-10 pb-4">
+        <div class="main-image-container">
+            <img id="main-image" src="img/thumb/pdf_thumb.jpg" alt="PDF管理システム メイン画像" class="w-full object-contain rounded-lg shadow-lg">
+        </div>
+
+        <!-- サムネイル一覧（存在するファイルのみ） -->
+        <div class="thumbnails-container mt-4">
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="thumbnail-btn active" data-image="img/thumb/pdf_thumb.jpg">
+                    <img src="img/thumb/pdf_thumb.jpg" alt="サムネイル1" class="w-20 h-20 object-cover rounded-lg border-2 border-primary">
+                </button>
+                <button class="thumbnail-btn" data-image="img/thumb/pdf_thumb2.jpg">
+                    <img src="img/thumb/pdf_thumb2.jpg" alt="サムネイル2" class="w-20 h-20 object-cover rounded-lg border-2 border-transparent hover:border-gray-300">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 説明文セクション（スクロール可能） -->
+    <div class="description-section mt-6">
+        <h3 class="text-2xl font-bold mb-4">PDF管理システム - 詳細</h3>
+
+        <div class="space-y-4 text-gray-700">
+            <p>
+                <strong>プロジェクト概要：</strong><br>
+                PDFファイルのアップロード、管理、検索機能を備えたシステム。OCR連携によるテキスト抽出機能を実装しました。
+            </p>
+
+            <p>
+                <strong>主な機能：</strong>
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>PDFファイルのアップロードと管理（フォルダ分類、タグ付け）</li>
+                <li>OCR連携によるテキスト抽出（日本語、英語対応）</li>
+                <li>全文検索機能（抽出したテキストをインデックス化）</li>
+                <li>ユーザー権限管理（閲覧、編集、削除権限）</li>
+                <li>バッチ処理による一括PDF処理</li>
+                <li>API連携（外部システムとのデータ連携）</li>
+            </ul>
+
+            <p>
+                <strong>技術スタック：</strong>
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-primary">Laravel</span>
+                <span class="badge badge-primary">Python</span>
+                <span class="badge badge-primary">MySQL</span>
+                <span class="badge badge-primary">OCR</span>
+                <span class="badge badge-primary">Elasticsearch</span>
+                <span class="badge badge-primary">Docker</span>
+                <span class="badge badge-primary">AWS S3</span>
+            </div>
+
+            <p>
+                <strong>開発の特徴：</strong><br>
+                Laravelをバックエンド、PythonをOCR処理用に使用するハイブリッドアーキテクチャを採用。
+                PDF処理は非同期ジョブとして実装し、大量のPDFファイルも効率的に処理可能です。
+            </p>
+
+            <p>
+                <strong>担当範囲：</strong><br>
+                要件定義から設計、開発、テスト、デプロイまで一貫して担当。
+                特にOCR連携部分と検索エンジン（Elasticsearch）の実装に注力しました。
+            </p>
+
+            <p>
+                <strong>プロジェクト期間：</strong><br>
+                2023年11月〜2024年3月（5ヶ月）
+            </p>
+
+            <p>
+                <strong>成果：</strong><br>
+                導入後、PDF管理作業の効率が80%向上。1日あたりの処理時間が4時間から45分に短縮されました。
+            </p>
+        </div>
+    </div>
+</div>

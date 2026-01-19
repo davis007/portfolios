@@ -235,7 +235,7 @@ function showProjectModal(title, description, technologies) {
                 <div class="mb-6">
                     <h4 class="font-bold text-lg mb-2">使用技術</h4>
                     <div class="flex flex-wrap gap-2">
-                        ${technologies.map(tech => `<span class="badge badge-primary">${tech}</span>`).join('')}
+                        ${technologies.map(tech => `<span class="badge badge-primary text-white">${tech}</span>`).join('')}
                     </div>
                 </div>
 
@@ -251,7 +251,6 @@ function showProjectModal(title, description, technologies) {
 
                 <div class="flex justify-end space-x-4">
                     <button id="modal-close-btn" class="btn btn-ghost">閉じる</button>
-                    <button class="btn btn-primary">詳細な資料を請求</button>
                 </div>
             </div>
         </div>
